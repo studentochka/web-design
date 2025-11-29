@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minesweeper</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <!-- Хедер гри -->
+    <div class="game-header">
+      <div class="display flag-counter">
+        <span id="flags">010</span>
+      </div>
+
+      <button id="reset-btn" class="face-btn">😃</button>
+
+      <div class="display timer">
+        <span id="timer">000</span>
+      </div>
+    </div>
+
+    <!-- Ігрове поле -->
+    <div class="game-board">
+      <!-- Приклад 10×10 -->
+      <!-- Закриті -->
+      <div class="cell closed"></div>
+      <div class="cell closed"></div>
+      <div class="cell closed"></div>
+      <div class="cell closed"></div>
+      <div class="cell closed"></div>
+      <div class="cell closed"></div>
+      <div class="cell closed"></div>
+      <div class="cell closed"></div>
+      <div class="cell closed"></div>
+      <div class="cell closed"></div>
+
+      <!-- Відкриті -->
+      <div class="cell opened number-1">1</div>
+      <div class="cell opened number-2">2</div>
+      <div class="cell opened number-3">3</div>
+      <div class="cell opened number-4">4</div>
+      <div class="cell opened number-5">5</div>
+      <div class="cell opened number-6">6</div>
+      <div class="cell opened number-7">7</div>
+      <div class="cell opened number-8">8</div>
+      <div class="cell opened number-1">1</div>
+      <div class="cell opened number-2">2</div>
+
+      <!-- Прапорці -->
+      <div class="cell flag">🚩</div>
+      <div class="cell flag">🚩</div>
+
+      <!-- Неправильний прапорець -->
+      <div class="cell wrong-flag">❌</div>
+
+      <!-- Міни -->
+      <div class="cell mine">💣</div>
+      <div class="cell mine">💣</div>
+
+      <!-- Взорвана -->
+      <div class="cell exploded">💥</div>
+
+      <!-- Додаткові закриті клітинки -->
+      <div class="cell closed"></div>
+      <div class="cell closed"></div>
+      <div class="cell closed"></div>
+      <div class="cell closed"></div>
+      <div class="cell closed"></div>
+    </div>
+  </div>
+</body>
+</html>
